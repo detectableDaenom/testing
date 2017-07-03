@@ -4,3 +4,11 @@
 .col-sm-2 {
 	background-color: lightblue;
 }
+
+.col-xs-8 {
+	background-color: cyan;
+}
+
+.col-xs-2 {
+	background-color: red;
+}
