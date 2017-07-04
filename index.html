@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />  
 	
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
     <!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,72 +15,56 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE']});
-        });
+	<script src="parallax.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE']});
+	});
+	
     </script>
 </head>
 
 <body>
-   
+
 <div id="fullpage">
 	<div class="section"> 
-		<div class="container">
-					<ul id="scene" class="scene">
-						<li class="layer" data-depth="0.00">
-							<div class="background"></div>
-						</li>
-
-						<li class="layer" data-depth="0.60">
-							<div class="kurama"><img src="name.png"></div>
-						</li>
-
-						<li class="layer" data-depth="0.40" data-invert-y="false">
-							<div class="landscape"><img src="photo.png" /></div>
-						</li>
-
-					</ul>
-		</div>
-	</div>
-
-	<div class="section"> 
-		<div class="container">
+		<div id="container" class="container">
 			<div class="row">    
 				<div class="col-xs-12"> 
-					<h1>Welcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
-					<h3>Test</h3><h3>Test</h3><h3>Test</h3><h3>Test</h3><h3>Test</h3><h3>Test</h3><h3>Test</h3><h3>Test</h3>
-					<p>Lorem ipsum...</p>
+					<div id="scene" class="scene">
+						<div class="layer" data-depth="0.05"><img class="img-responsive" src="bg.png" ></div>
+						<div class="layer" data-depth="0.55"><img class="img-responsive" src="name.png"></div>
+						<div class="layer" data-depth="0.99"><img class="img-responsive" src="photo.png"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="section"> 
-		<div class="container">
+		<div id="container" class="container">
 			<div class="row">    
 				<div class="col-xs-12"> 
-					<h1>Welcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, .</p>
-					<h3>Test</h3>
-					<p>Lorem ipsum...</p>
+					<div id="scene1" class="scene1">
+						<div class="layer" data-depth="0.05"><img class="img-responsive" src="bg.png" ></div>
+						<div class="layer" data-depth="0.55"><img class="img-responsive" src="name.png"></div>
+						<div class="layer" data-depth="0.99"><img class="img-responsive" src="apoor.png"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div> 	
-
-
-
-	<!-- Scripts -->
-	<script src="./parallax.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var scene = document.getElementById('scene');
-            var parallax = new Parallax(scene);
-        });
-    </script>
+</div>
 	
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	var scene1 = document.getElementById('scene1');
+	var parallax = new Parallax(scene1);
+
+	</script>
  
 </body> 
 </html>
