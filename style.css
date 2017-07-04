@@ -52,3 +52,7 @@ body {
     100% 	{color: #f22a62;}
 }
 
+.landing-page {
+ background: url(images/bg1.jpg) no-repeat center top fixed;
+}
+
