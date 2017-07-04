@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat|Audiowide|Amaranth" rel="stylesheet">
+	
 	<script src="parallax.js"></script>
 	
 	<script type="text/javascript">
@@ -27,15 +29,18 @@
 
 <body>
 
+
+
 <div id="fullpage">
 	<div class="section"> 
+	    <div class="logo">
+			<div class="container">Anubhav &amp; Apoorva</div>
+		</div>
 		<div id="container" class="container">
 			<div class="row">    
 				<div class="col-xs-12"> 
-					<div id="scene1" class="scene">
-						<div class="layer box center" data-depth="0.3"><img class="img-responsive" src="images/box.jpg" ></div>
-						<div class="layer" data-depth="0.55"><img class="img-responsive" src="images/photo-anubhav.png"></div>
-						<div class="layer" data-depth="0.80"><img class="img-responsive" src="images/name-anubhav.png"></div>
+					<div id="scene3" class="scene">
+						<div class="layer" data-depth="0.43"><img class="img-responsive" src="images/landing-page.png" ></div>
 					</div>
 				</div>
 			</div>
@@ -54,6 +59,20 @@
 			</div>
 		</div>
 	</div>
+	<div class="section"> 
+		<div id="container" class="container">
+			<div class="row">    
+				<div class="col-xs-12"> 
+					<div id="scene1" class="scene">
+						<div class="layer box center" data-depth="0.3"><img class="img-responsive" src="images/box.jpg" ></div>
+						<div class="layer" data-depth="0.55"><img class="img-responsive" src="images/photo-anubhav.png"></div>
+						<div class="layer" data-depth="0.80"><img class="img-responsive" src="images/name-anubhav.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 </div>
 	
@@ -64,6 +83,8 @@
 	var parallax = new Parallax(scene1);
 	var scene2 = document.getElementById('scene2');
 	var parallax = new Parallax(scene2);
+		var scene3 = document.getElementById('scene3');
+	var parallax = new Parallax(scene3);
 
 	</script>
  
