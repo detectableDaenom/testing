@@ -11,22 +11,9 @@ body {
 }
  
 .box {
-	height: 70%;
-    width: 60%;
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: -997;
-}
-
-.box-apoorva {
-	width: 40%;
-    background-color:white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	z-index: -997;
-}
-
-.center {
-    margin: auto;
 }
 
 .logo {
@@ -65,18 +52,16 @@ body {
 .apoorva-page {
 	background: url(images/bg2.jpg) no-repeat bottom right;
 }
-
 .anubhav-page {
 	background: url(images/bg3.jpg) no-repeat top right;
 }
-
 .anubhav-page-inner {
 	background: url(images/bg3a.jpg) no-repeat bottom left;
 }
 
 .savethedate-page {
- background: url(images/bg4.jpg) no-repeat bottom right;
- z-index: -999;
+/*  background: url(images/bg4.jpg) no-repeat bottom right;
+ */ z-index: -999;
 }
 
 .footer {
@@ -99,6 +84,8 @@ body {
  z-index: -998;
  top: -70px;
  right: -70px;
+ height: 100%;
+ width: 50%;
 }
 .animation {
  -webkit-animation: wave 7.11111s 0.1s infinite linear;
