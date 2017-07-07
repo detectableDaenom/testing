@@ -2,6 +2,25 @@ body {
 	background-color: white;
 }
 
+#section0,
+#section1,
+#section2,
+#section3{
+    background-size: cover;
+}
+
+/* Defining each sectino background and styles 
+* --------------------------------------- */
+#section0{
+    background-image: url(images/bg1.jpg);
+}
+#section1{
+    background-image: url(images/bg2.jpg);
+}
+#section2{
+    background-image: url(images/bg3a.jpg);
+}
+
 .col-xs-12 {
 	text-align: center;
 }
@@ -10,11 +29,22 @@ body {
     position: absolute;
 }
  
+
+@media (max-width: 767px) {
+.box {
+	visibility: hidden;
+}
+.scene4 {
+	visibility: hidden;
+}
+} 
 .box {
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: -997;
+	opacity: 0.8;
 }
+
 
 .logo {
 	position: absolute;
@@ -46,18 +76,6 @@ body {
     100% 	{color: #f22a62;}
 }
 
-.landing-page {
-	background: url(images/bg1.jpg) no-repeat center top fixed;
-}
-.apoorva-page {
-	background: url(images/bg2.jpg) no-repeat bottom right;
-}
-.anubhav-page {
-	background: url(images/bg3.jpg) no-repeat top right;
-}
-.anubhav-page-inner {
-	background: url(images/bg3a.jpg) no-repeat bottom left;
-}
 
 .savethedate-page {
 /*  background: url(images/bg4.jpg) no-repeat bottom right;
