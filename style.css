@@ -36,12 +36,14 @@ body {
 	bottom: 0;
 }
 
+
+
 @media (max-width: 767px) {
 	.box {
 		visibility: hidden;
 	}
 	.scene4 {
-		visibility: hidden;
+	/* 	visibility: hidden; */
 	}
 } 
 .box {
@@ -89,7 +91,6 @@ body {
 .absolute {
  position: absolute!important;
 }
-
 
 .watercolor {
  z-index: -998;
