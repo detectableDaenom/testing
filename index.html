@@ -16,6 +16,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat|Audiowide|Amaranth" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	
 	<script src="parallax.js"></script>
 	
@@ -30,7 +31,7 @@
 <body>
 
 <div id="fullpage">
-	<div class="section" id="section0"> 
+	<div class="section" id="landing-page"> 
 	    <div class="logo">
 			<div class="container">Anubhav &amp; Apoorva</div>
 		</div>
@@ -51,7 +52,7 @@
 			</div>
 		</footer>
 	</div>
-	<div class="section" id="section1"> 
+	<div class="section" id="apoorva-page"> 
 		<div id="container" class="container">
 			<div class="row">    
 				<div class="col-xs-12"> 
@@ -71,7 +72,7 @@
 			</div>
 		</footer>
 	</div>
-	<div class="section" id="section2">
+	<div class="section" id="anubhav-page">
 		<div id="container" class="container">
 			<div class="row">    
 				<div class="col-xs-12"> 
@@ -84,20 +85,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section3">
+	<div class="section" id="save-the-date-page">
 		<div id="container" class="container">
 			<div class="row">
-				<div class="col-xs-12">
-					<div class="absolute watercolor"><img class="animation" src="images/watercolor.png" alt=""></div>
-					<div id="scene4" class="scene4">							
-						<div class="layer" data-depth="0.09"><img class="img-responsive" src="images/save-the-date.png" ></div>
-						<div class="layer" data-depth="0.20"><img class="img" src="images/venue.png"></div>
+				<div class="col-xs-12">					
+					<div id="scene4" class="scene4">
+						<div class="layer" data-depth="0.09"><img class="img" src="images/save-the-date.png" ></div>
 					</div>
 				</div>	
 			</div>
 		</div>
 	</div>
- 	<div class="section" id="section4">
+ 	<div class="section" id="joinus">
 		<div id="container" class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -115,6 +114,42 @@
 			</div>
 		</div>
 	</div>
+	<div class="section" id="photos">
+		<div class="inner layer" data-depth="0.11">
+			<div class="container">
+			</div>
+		</div>
+	</div>
+	<div class="section" id="countdown">		
+		<div id="scene6" class="scene6">
+			<div id="overlay" class="layer" data-depth="0.20">
+				<div id="timer"><span id="daysRemaining"></span>days to go</div>
+				<h4>Plan and book your tickets soon.</br>
+					Railway Tickets on Gorakhpur Route fills very early in scheduled 120 days advance-ticketing-window.
+				</h4>
+			</div>
+		</div>
+		<div class="pull-center" style="text-align: center;">
+			<a href="#" title="Trains to Gorakhpur" data-toggle="popover" data-trigger="click" data-html="true"
+				data-content="<ul>
+								  <li><a href='https://goo.gl/nj7li1' target='_blank'>New Delhi to Gorakhpur</a></li>
+								  <li><a href='https://goo.gl/EuSxPW' target='_blank'>Lucknow to Gorakhpur</a></li>
+							</ul>"
+				><i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">train</i>
+			</a>
+			<a href="#" title="Flights nearest to Gorakhpur" data-toggle="popover" data-trigger="click" data-html="true"
+				data-content="<ul>
+								  <li><a href='https://goo.gl/GDD44a' target='_blank'>Bangalore to Lucknow </a></li>
+								  <li><a href='https://goo.gl/SWkPmk' target='_blank'>Bangalore to Delhi</a></li>
+							</ul>"
+				><i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">flight</i>
+			</a>
+			<a href="#" title="" data-toggle="popover" data-trigger="click" data-html="true"
+				data-content="<a href='https://goo.gl/maps/CSV3Q5MaGDH2' target='_blank'>Wedding Venue : Ambience - The Banquet Hall </a>">
+				<i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">location_on</i>
+			</a>
+		</div>
+	</div>
 
 </div>
 	
@@ -129,10 +164,47 @@
 	var parallax = new Parallax(scene3);
 	var scene4 = document.getElementById('scene4');
 	var parallax = new Parallax(scene4);
-		var scene5 = document.getElementById('scene5');
+	var scene5 = document.getElementById('scene5');
 	var parallax = new Parallax(scene5);
-
+	var scene6 = document.getElementById('scene6');
+	var parallax = new Parallax(scene6);
+	var parallax = new Parallax(photos);
 	</script>
- 
+	
+	<script>
+		var end = new Date('11/13/2017 08:0 PM');
+		var _second = 1000;
+		var _minute = _second * 60;
+		var _hour = _minute * 60;
+		var _day = _hour * 24;
+		var timer;
+		function showRemaining() {
+			var now = new Date();
+			var distance = end - now;
+			if (distance < 0) {
+
+				clearInterval(timer);
+				document.getElementById('daysRemaining').innerHTML = 'Over!';
+
+				return;
+			}
+			var days = Math.floor(distance / _day);
+			var hours = Math.floor((distance % _day) / _hour);
+			var minutes = Math.floor((distance % _hour) / _minute);
+			var seconds = Math.floor((distance % _minute) / _second);
+
+			document.getElementById('daysRemaining').innerHTML = days + ' ';
+		}
+		timer = setInterval(showRemaining, 1000);
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="popover"]').popover({
+			container: 'body'
+		});   
+	});
+	</script>
+
 </body> 
 </html>
