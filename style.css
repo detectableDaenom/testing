@@ -21,28 +21,34 @@ body {
     background-image: url(images/bg3a.jpg);
 }
 
-.col-xs-12 {
-	text-align: center;
-}
- 
 .layer div  {
     position: absolute;
 }
- 
+
+.and {
+	font-size: 40px;
+	font-weight: 600;
+	font-family: 'Audiowide', cursive;
+}
+
+.footer {
+	position: absolute; 
+	bottom: 0;
+}
 
 @media (max-width: 767px) {
-.box {
-	visibility: hidden;
-}
-.scene4 {
-	visibility: hidden;
-}
+	.box {
+		visibility: hidden;
+	}
+	.scene4 {
+		visibility: hidden;
+	}
 } 
 .box {
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: -997;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 
@@ -75,19 +81,6 @@ body {
     50% 	{color: #FFF;}
     100% 	{color: #f22a62;}
 }
-
-
-.savethedate-page {
-/*  background: url(images/bg4.jpg) no-repeat bottom right;
- */ z-index: -999;
-}
-
-.footer {
- background-color: #ffb3b3;
- z-index: 999;
-}
-
-
 
 
 
