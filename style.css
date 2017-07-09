@@ -65,6 +65,42 @@ padding: 0px;
 }
 
 
+.container-demo {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.top-padding,
+.bottom-padding {
+	height:15%;
+    overflow: hidden;
+}
+.mid-row {
+	height:70%;
+	overflow: hidden;
+}
+.left-col {
+	background-color: pink;
+}
+.right-col {
+	background-color: green;
+}
+.col-padding {
+	background-color: pink;
+}
+.saveTheDate h2.right {
+	color: #ff5a00;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: 'Audiowide', cursive;
+	font-size: 6em;
+	text-align: right;
+	line-height: 85%;
+	margin-right: 2px;
+}
+
+
+
+
 .logo {
 	position: absolute;
 	top: 50px;
@@ -204,7 +240,7 @@ background-size: 600px auto;
 	opacity: .5;
 	z-index: -999;
 	top: -70px;
-	right: -70px;
+	right: 0px;
 }
 .absolute {
 	position: absolute!important;
@@ -250,6 +286,10 @@ background-size: 600px auto;
 		position: relative;
 		margin: 0 0 15px;
 		left: 0;
+	}
+	
+	.saveTheDate h2.right {
+		font-size: 2em;
 	}
  }
 
