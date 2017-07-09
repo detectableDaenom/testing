@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8"> 
+	<title> Anubhav Weds Apoorva - 21 Nov'17 </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />  
+	
+	<meta name="author" content="Anubhav Srivastava" />
+    <meta name="description" content="Wedding website of Anubhav & Apoorva" />
+    <meta name="Resource-type" content="Document" />
+	<meta property="og:url" content="https://detectabledaenom.github.io/wedding" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wedding of Anubhav & Apoorva" />
+    <meta property="og:description" content="Join Us! When we start our journey." />
+    <meta property="og:image" content="https://detectabledaenom.github.io/wedding/images/anuapoo.jpg" />
 	
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	
+	
     <!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="parallax.js"></script>
 	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Audiowide|Amaranth" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	
-	<script src="parallax.js"></script>
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage();
 	});	
     </script>
+	<script>
+	    jQuery(window).on('load',function(){
+		jQuery(".preLoader").fadeOut(1000);
+	    });
+	</script>
 </head>
 
 <body>
 <div id="fullpage">
+	<div class="preLoader"></div>
 	<div class="section" id="landing-page"> 
 	    <div class="logo">
 			<div class="container">Anubhav &amp; Apoorva</div>
@@ -134,21 +149,21 @@
 			</div>
 		</div>
 		<div style="text-align: center;">
-			<a href="#" title="Trains to Gorakhpur" data-toggle="popover" data-trigger="click" data-html="true"
+			<a href="#" title="Trains to Gorakhpur" data-toggle="popover" data-trigger="focus" data-trigger="click"  data-html="true"
 				data-content="<ul>
 								  <li><a href='https://goo.gl/nj7li1' target='_blank'>New Delhi to Gorakhpur</a></li>
 								  <li><a href='https://goo.gl/EuSxPW' target='_blank'>Lucknow to Gorakhpur</a></li>
 							</ul>"
 				><i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">train</i>
 			</a>
-			<a href="#" title="Flights nearest to Gorakhpur" data-toggle="popover" data-trigger="click" data-html="true"
+			<a href="#" title="Flights nearest to Gorakhpur" data-toggle="popover" data-trigger="focus" data-trigger="click" data-html="true"
 				data-content="<ul>
 								  <li><a href='https://goo.gl/GDD44a' target='_blank'>Bangalore to Lucknow </a></li>
 								  <li><a href='https://goo.gl/SWkPmk' target='_blank'>Bangalore to Delhi</a></li>
 							</ul>"
 				><i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">flight</i>
 			</a>
-			<a href="#" title="" data-toggle="popover" data-trigger="click" data-html="true"
+			<a href="#" title="" data-toggle="popover" data-trigger="focus" data-trigger="click" data-html="true"
 				data-content="<a href='https://goo.gl/maps/CSV3Q5MaGDH2' target='_blank'>Wedding Venue : Ambience - The Banquet Hall </a>">
 				<i class="material-icons" style="font-size:40px;color:red;text-shadow:2px 2px 4px #111111;">location_on</i>
 			</a>
@@ -180,7 +195,7 @@
 	</script>
 	
 	<script>
-		var end = new Date('11/13/2017 08:0 PM');
+		var end = new Date('11/20/2017 08:0 PM');
 		var _second = 1000;
 		var _minute = _second * 60;
 		var _hour = _minute * 60;
