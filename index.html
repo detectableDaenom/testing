@@ -57,9 +57,9 @@
 			<div class="row">    
 				<div class="col-xs-12"> 
 					<div id="scene2" class="scene2">
-						<div class="layer" data-depth="0.05"><img class="img-responsive box" src="images/box-apoorva.jpg" ></div>
+						<div class="layer" data-depth="-0.05"><img class="img-responsive bo" src="images/box-apoorva.jpg" ></div>
 						<div class="layer" data-depth="0.10"><img class="img-responsive" src="images/photo-apoorva.png"></div>
-						<div class="layer" data-depth="0.20"><img class="img-responsive" src="images/name-apoorva.png"></div>
+						<div class="layer" data-depth="-0.20"><img class="img-responsive" src="images/name-apoorva.png"></div>
 					</div>
 				</div>
 			</div>
@@ -77,40 +77,34 @@
 			<div class="row">    
 				<div class="col-xs-12"> 
 					<div id="scene3" class="scene3">
-						<div class="layer" data-depth="0.05"><img class="img-responsive box" src="images/box-apoorva.jpg" ></div>
+						<div class="layer" data-depth="-0.05"><img class="img-responsive bo" src="images/box-apoorva.jpg" ></div>
 						<div class="layer" data-depth="0.10"><img class="img-responsive" src="images/photo-anubhav.png"></div>
-						<div class="layer" data-depth="0.20"><img class="img-responsive" src="images/name-anubhav.png"></div>
+						<div class="layer" data-depth="-0.20"><img class="img-responsive" src="images/name-anubhav.png"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section" id="save-the-date-page">
-		<div id="container" class="container">
+	<div class="section savethedate" id="savethedate">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">					
-					<div id="scene4" class="scene4">
-						<div class="layer" data-depth="0.09"><img class="img" src="images/save-the-date.png" ></div>
+				<div class="col-md-9 col-md-push-2">				
+					<h2 class="absolute right"><br>SAVE<br>THE<br>DATE</h2>
+					<!-- 	<div class="col-md-6 col-md-push-1"> -->
+						<div data-depth="0.10" class="layer details">
+							<div class="info">
+								<h3>Venue</h3>
+								<strong>21st November 2017</strong> 08:00 PM onwards
+								<br>Ambience The Banquet Hall
+								<br>Near Regional Passport Office,
+								<br>Basharatpur, Gorakhpur
+							</div>
+					   </div>
+				<!-- 	</div> -->
+					<div class=" absolute watercolor">
+						<img class="animation" src="images/watercolor.png" alt="">
 					</div>
-				</div>	
-			</div>
-		</div>
-	</div>
- 	<div class="section" id="joinus">
-		<div id="container" class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="scene5" class="scene5">							
-						<div class="layer" data-depth="0.09"><img class="img-responsive" src="images/anuapoo.jpg" ></div>
-						<h2 data-depth="0.10" class="layer absolute">Join us 
-							<span>Please RSVP on
-							<a href="https://www.facebook.com/messages/t/srivastava.anubhav/" target="_blank"> Facebook </a> or
-							<a href="https://api.whatsapp.com/send?phone=+918377956297&amp;text=Hi"
-							target="_blank"> Whatsapp </a>
-							</span>
-						</h2>
-					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -162,12 +156,10 @@
 	var parallax = new Parallax(scene2);
 	var scene3 = document.getElementById('scene3');
 	var parallax = new Parallax(scene3);
-	var scene4 = document.getElementById('scene4');
-	var parallax = new Parallax(scene4);
-	var scene5 = document.getElementById('scene5');
-	var parallax = new Parallax(scene5);
 	var scene6 = document.getElementById('scene6');
 	var parallax = new Parallax(scene6);
+	var savethedate = document.getElementById('savethedate');
+    var parallax = new Parallax(savethedate);
 
 	</script>
 	
