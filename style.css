@@ -57,16 +57,6 @@ padding: 0px;
 	font-size: 5em;
 }
 
-
-
-@media (max-width: 767px) {
-	.bo {
-		visibility: hidden;
-	}
-	.scene4 {
-	/* 	visibility: hidden; */
-	}
-} 
 .bo {
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -225,12 +215,15 @@ background-size: 600px auto;
 }
 
 @media only screen and (max-width: 767px) {
-	#savethedate,
-	#joinus {
+	#savethedate {
 		-webkit-background-size: 100px 100px;
 		-moz-background-size: 100px 100px;
 		-o-background-size: 100px 100px;
 		background-size: 100px 100px;
+	}
+	
+	.bo {
+		visibility: hidden;
 	}
 	.animation {
 		-webkit-animation: wave 7.11111s 0.1s infinite linear alternate;
