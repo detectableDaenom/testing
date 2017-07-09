@@ -5,6 +5,8 @@
     background-size: cover;
 }
 
+
+
 /* Defining each section background and styles 
 * --------------------------------------- */
 #landing-page{
@@ -73,12 +75,10 @@ padding: 0px;
 .top-padding{
 	height:1%;
 	text-align: right;
-	background-color:pink;
 }
 .bottom-padding {
 	height:19%;
-	text-align: right;
-	background-color:pink;
+	text-align: center;
 }
 .intermediate-padding {
 	height:20%;
@@ -104,9 +104,23 @@ padding: 0px;
 .saveTheDate .info {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
 }
 
-
+.joinus {
+	font-family: 'Audiowide', cursive;
+	color: #1bf713;
+	font-size: 5em;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;	
+}
+.rsvp {
+	display: block;
+	font-size: 2em;
+	color: #000;
+	text-align: center;
+	margin-top: -20px;
+	font-family: 'Montserrat', sans-serif;
+}
 
 
 .logo {
@@ -208,7 +222,7 @@ background-size: 600px auto;
 
 
 
-.savethedate .info {
+.saveTheDate .info {
 	 position: relative;
 	 font-family: 'Montserrat', sans-serif;
 }
@@ -258,9 +272,17 @@ background-size: 600px auto;
 		margin-top: 10%;
 		padding-left: 10%;
 		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
 	}
 	.saveTheDate h4.right {
 		font-size: 2em;
+	}
+	.joinus {
+		font-size: 2em;
+	}
+	.rsvp {
+		font-size: 1em;
+		margin-top: -2px;
 	}
 
  }

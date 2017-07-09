@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />  
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />  
 	
 	<link rel="stylesheet" type="text/css" href="style.css" />
     <!-- jQuery library -->
@@ -15,21 +15,20 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Montserrat|Audiowide|Amaranth" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Audiowide|Amaranth" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 	
 	<script src="parallax.js"></script>
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage();
-	});
-	
+	});	
     </script>
 </head>
 
 <body>
-
 <div id="fullpage">
 	<div class="section" id="landing-page"> 
 	    <div class="logo">
@@ -85,27 +84,40 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="section savethedate" id="savethedate">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9 col-md-push-2">				
-					<h2 class="absolute right"><br>SAVE<br>THE<br>DATE</h2>
-						<div data-depth="0.10" class="layer details">
-							<div class="info">
-								<h3>Venue</h3>
-								<strong>21st November 2017</strong> 08:00 PM onwards
-								<br>Ambience The Banquet Hall
-								<br>Near Regional Passport Office,
-								<br>Basharatpur, Gorakhpur
-							</div>
-					   </div>
-					<div class=" absolute watercolor">
-						<img class="animation" src="images/watercolor.png" alt="">
-					</div>
+<div class="section saveTheDate" id="saveTheDate">
+		<div class="container container-demo">
+			<div class="row top-padding">
+				<div class="col-xs-12">
+					<h4 class="absolute right"><br>SAVE<br>THE<br>DATE</h4>
 				</div>
 			</div>
+			<div class="row intermediate-padding"><div class="col-xs-12"></div></div>
+			<div class="row mid-row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8 mid-col" id="midCol">
+					<div data-depth="0.10" class="layer details info">
+						<h3>Venue</h3>
+						<strong>21st November 2017</strong> 08:00 PM onwards
+						<br>Ambience The Banquet Hall
+						<br>Near Regional Passport Office,
+						<br>Basharatpur, Gorakhpur
+					</div>
+				</div>
+				<div class="col-xs-2"></div>
+			</div>
+			<div class="row bottom-padding">
+				<div class="col-xs-12">
+					<h2 class="joinus" id="joinus"><div data-depth="-0.10" class="layer">Join us</div></h2>
+					<span class="rsvp">Please RSVP on
+						<a href="https://www.facebook.com/messages/t/srivastava.anubhav/" target="_blank"> Facebook </a> or
+						<a href="https://api.whatsapp.com/send?phone=+918377956297&amp;text=Hi"
+							 target="_blank"> Whatsapp </a>
+					</span>					
+				</div>
+			</div>
+			<div class="absolute watercolor"><img class="animation" src="images/watercolor.png" alt=""></div>
 		</div>
-	</div> -->
+	</div>
 	<div class="section" id="photos">
 		<div class="inner">
 			<div class="container">
@@ -143,31 +155,7 @@
 		</div>
 	</div>
 
-	<div class="section saveTheDate" id="saveTheDate">
-		<div class="container container-demo">
-			<div class="row top-padding">
-				<div class="col-xs-12">
-					<h4 class="absolute right"><br>SAVE<br>THE<br>DATE</h4>
-				</div>
-			</div>
-			<div class="row intermediate-padding"><div class="col-xs-12"></div></div>
-			<div class="row mid-row">
-				<div class="col-xs-2"></div>
-				<div class="col-xs-8 mid-col" id="midCol">
-					<div data-depth="0.10" class="layer details info">
-						<h3>Venue</h3>
-						<strong>21st November 2017</strong> 08:00 PM onwards
-						<br>Ambience The Banquet Hall
-						<br>Near Regional Passport Office,
-						<br>Basharatpur, Gorakhpur
-					</div>
-				</div>
-				<div class="col-xs-2"></div>
-			</div>
-			<div class="row bottom-padding"><div class="col-xs-12"></div></div>
-			<div class="absolute watercolor"><img class="animation" src="images/watercolor.png" alt=""></div>
-		</div>
-	</div>
+	
 	
 	
 </div>
@@ -185,6 +173,8 @@
 	var parallax = new Parallax(scene6);
 	var midCol = document.getElementById('midCol');
 	var parallax = new Parallax(midCol);
+	var joinus = document.getElementById('joinus');
+	var parallax = new Parallax(joinus);
 
 
 	</script>
