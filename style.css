@@ -57,7 +57,7 @@ padding: 0px;
 	font-size: 5em;
 }
 
-.bo {
+.box {
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: -997;
@@ -70,32 +70,40 @@ padding: 0px;
     padding-left: 0px;
     padding-right: 0px;
 }
-.top-padding,
+.top-padding{
+	height:1%;
+	text-align: right;
+	background-color:pink;
+}
 .bottom-padding {
-	height:15%;
-    overflow: hidden;
+	height:19%;
+	text-align: right;
+	background-color:pink;
+}
+.intermediate-padding {
+	height:20%;
+	text-align: right;
 }
 .mid-row {
-	height:70%;
+	height:60%;
 	overflow: hidden;
 }
-.left-col {
-	background-color: pink;
+.info {
+	padding-left: 50%;
 }
-.right-col {
-	background-color: green;
-}
-.col-padding {
-	background-color: pink;
-}
-.saveTheDate h2.right {
+
+
+.saveTheDate h4.right {
 	color: #ff5a00;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	font-family: 'Audiowide', cursive;
 	font-size: 6em;
 	text-align: right;
 	line-height: 85%;
-	margin-right: 2px;
+}
+.saveTheDate .info {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -204,30 +212,6 @@ background-size: 600px auto;
 	 position: relative;
 	 font-family: 'Montserrat', sans-serif;
 }
-.savethedate h2.right {
-	color: #ff5a00;
-	right: 140px;
-	top: 0px;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	font-family: 'Audiowide', cursive;
-	font-size: 5em;
-	text-align: right;
-	line-height: 90%;
-}
-.savethedate h3 {
-	text-align: right;
-	position: absolute;
-	top: 2px;
-	width: 120px;
-	left: -180px;
-	margin: 0;
-	font-family: 2em;
-}
-.savethedate .details {
-	margin-top: 50px;
-	font-size: 1.4em;
-	line-height: 1.5em;
-}
 .details strong {
 	display: block;
 	margin-bottom: 5px;
@@ -237,7 +221,7 @@ background-size: 600px auto;
 	position: relative;
 }
 .watercolor {
-	opacity: .5;
+	opacity: .3;
 	z-index: -999;
 	top: -70px;
 	right: 0px;
@@ -258,7 +242,7 @@ background-size: 600px auto;
 		background-size: 100px 100px;
 	}
 	
-	.bo {
+	.box {
 		visibility: hidden;
 	}
 	.animation {
@@ -270,26 +254,14 @@ background-size: 600px auto;
 		opacity: .3;
 		position: absolute!important;
 	}
-	.savethedate .info {
-		margin-bottom: 20px;
+	.saveTheDate .info {
+		margin-top: 10%;
+		padding-left: 10%;
 		font-family: 'Montserrat', sans-serif;
 	}
-	.savethedate h2.right {
-		right: 0;
-		top: 0px;
-	}
-	.savethedate .details {
-		font-size: 1em;
-		margin-top: 10%;
-	}
-	.savethedate h3 {
-		position: relative;
-		margin: 0 0 15px;
-		left: 0;
-	}
-	
-	.saveTheDate h2.right {
+	.saveTheDate h4.right {
 		font-size: 2em;
 	}
+
  }
 

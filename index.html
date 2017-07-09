@@ -57,7 +57,7 @@
 			<div class="row">    
 				<div class="col-xs-12"> 
 					<div id="scene2" class="scene2">
-						<div class="layer" data-depth="-0.05"><img class="img-responsive bo" src="images/box-apoorva.jpg" ></div>
+						<div class="layer" data-depth="-0.05"><img class="img-responsive box" src="images/box-apoorva.jpg" ></div>
 						<div class="layer" data-depth="0.10"><img class="img-responsive" src="images/photo-apoorva.png"></div>
 						<div class="layer" data-depth="-0.20"><img class="img-responsive" src="images/name-apoorva.png"></div>
 					</div>
@@ -77,7 +77,7 @@
 			<div class="row">    
 				<div class="col-xs-12"> 
 					<div id="scene3" class="scene3">
-						<div class="layer" data-depth="-0.05"><img class="img-responsive bo" src="images/box-apoorva.jpg" ></div>
+						<div class="layer" data-depth="-0.05"><img class="img-responsive box" src="images/box-apoorva.jpg" ></div>
 						<div class="layer" data-depth="0.10"><img class="img-responsive" src="images/photo-anubhav.png"></div>
 						<div class="layer" data-depth="-0.20"><img class="img-responsive" src="images/name-anubhav.png"></div>
 					</div>
@@ -145,13 +145,24 @@
 
 	<div class="section saveTheDate" id="saveTheDate">
 		<div class="container container-demo">
-			<div class="row top-padding"><div class="col-xs-12"></div></div>
-			<div class="row mid-row">
-				<div class="col-xs-7 left-col">yellow</div>
-				<div class="col-xs-4 right-col">
-					<h2 class="absolute right"><br>SAVE<br>THE<br>DATE</h2>
+			<div class="row top-padding">
+				<div class="col-xs-12">
+					<h4 class="absolute right"><br>SAVE<br>THE<br>DATE</h4>
 				</div>
-				<div class="col-xs-1 col-padding"></div>
+			</div>
+			<div class="row intermediate-padding"><div class="col-xs-12"></div></div>
+			<div class="row mid-row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8 mid-col" id="midCol">
+					<div data-depth="0.10" class="layer details info">
+						<h3>Venue</h3>
+						<strong>21st November 2017</strong> 08:00 PM onwards
+						<br>Ambience The Banquet Hall
+						<br>Near Regional Passport Office,
+						<br>Basharatpur, Gorakhpur
+					</div>
+				</div>
+				<div class="col-xs-2"></div>
 			</div>
 			<div class="row bottom-padding"><div class="col-xs-12"></div></div>
 			<div class="absolute watercolor"><img class="animation" src="images/watercolor.png" alt=""></div>
@@ -172,6 +183,8 @@
 	var parallax = new Parallax(scene3);
 	var scene6 = document.getElementById('scene6');
 	var parallax = new Parallax(scene6);
+	var midCol = document.getElementById('midCol');
+	var parallax = new Parallax(midCol);
 
 
 	</script>
